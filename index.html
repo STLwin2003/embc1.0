@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/energy_2060397.png"
+      type="image/x-icon"
+    />
+    <title>EMBC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="boddy">
+    <div class="position-relative bg-primary">
+      <div class="position-absolute top-0 start-0">
+        <img
+          src="../img/energy_2060397.png"
+          alt="logo button"
+          class="logo"
+        /><span class="text-light">EMBC</span>
+      </div>
+
+      <div class="position-absolute top-0 end-0">
+        <a href="#frame" data-bs-toggle="modal" class="m-4">
+          <i
+            class="bi bi-person-lines-fill color-light info"
+            style="font-size: 35px"
+          ></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="bodddy">
+      <div class="d-flex justify-content-center">
+        <div class="btn btn-secondary myan mx-2">မြန်မာ</div>
+        <div class="btn btn-success eng mx-2">English</div>
+      </div>
+      <span class="fs-2 text-light text-center text-lang"
+        >Electricity Meter Bill Calculator</span
+      ><br />
+      <span class="fs-6 text-light text-center font-monospace text-lang">
+        You can click Meter button to calculate the specific <br />
+        amount of cost from your daily, monthly or yearly meter units,<br />or
+        you can click Predict button to predict the meter unit <br />
+        and cost of your home or factory.</span
+      >
+      <br />
+      <div class="btn-group mx-auto">
+        <a href="./src/meter.html">
+          <button
+            class="btn btn-outline-info btn-lg rounded-pill border-3 mx-3 size-3"
+            type="button"
+            aria-expanded="false"
+          >
+            <i class="bi bi-calculator"></i>
+            <span class="text-lang"> Meter</span>
+          </button>
+        </a>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-warning btn-lg dropdown-toggle rounded-pill border-3 mx-3"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-file-ppt-fill"></i>
+            <span class="text-lang">Predict</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li>
+              <a class="dropdown-item" href="./src/predict.html"
+                ><i class="bi bi-house p-2"></i
+                ><span class="text-lang">HouseHold</span></a
+              >
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="./src/factory.html"
+                ><i class="bi bi-houses p-2"></i>
+                <span class="text-lang">Factory</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <br /><br /><br /><br />
+        <br />
+      </div>
+    </div>
+
+    <div class="modal modal-xl fade box" id="frame">
+      <div class="modal-dialog">
+        <div class="modal-content mm text-light">
+          <div class="modal-header">
+            <h2 class="modal-title text-lang">About Us</h2>
+            <button class="btn-close bg-light" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <h4 class="text-lang">Electricity Meter Bill Calculator</h4>
+              <p class="text-lang">
+                Electricity meter bill calculation software is the project of
+                PTU(pathein technological university)IT second year students.
+                Our goals is to perform the real tasks of actual workspace
+                within the short period of time. Our software can perform meter
+                prediction tasks and can handle a lots of big specific
+                calculation problems.
+              </p>
+              <hr />
+              <div>
+                <h3>Our Supervisor</h3>
+                <div class="row">
+                  <div class="col-12 mx-auto">
+                    <img
+                      src="../img/plug_780551.png"
+                      class="img-fluid rounded-circle"
+                      alt="Supervisor"
+                      width="130px"
+                    />
+                    <h4>Daw Amy Thiri Aung</h4>
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <h3>Our Team</h3>
+                  <div class="col-sm-4">
+                    <img
+                      src="../img/profile.jpg"
+                      class="img-fluid rounded-circle"
+                      width="130px"
+                      alt="STL"
+                    />
+                    <h4>Mg Shin Thant Lwin</h4>
+                    <p>II.BE-IT(second year)</p>
+                    <p>Project Leader</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="../img/profile2.jpg"
+                      class="img-fluid rounded-circle"
+                      width="130px"
+                      alt="WZPL"
+                    />
+                    <h4>Ma Wai Zin Phyo Lwin</h4>
+                    <p>II.BE-IT(second year)</p>
+                    <p>Project Adviser</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="../img/energy_2060397.png"
+                      class="img-fluid rounded-circle"
+                      width="130px"
+                      alt="TPK"
+                    />
+                    <h4>Mg Thet Paing Kyaw</h4>
+                    <p>II.BE-IT(second year)</p>
+                    <p>Project Adviser</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div>
+                <h4>Special Thanks to</h4>
+                <b>Sun Mobile and Electronics</b> and
+                <b>TTK Construction Company</b>
+                <br />
+                <br />
+                <p>UI/UX Designer : <b>Bhone Thit Aung</b></p>
+                <p>Backend Developer : <b>Wyne Htet Aung</b></p>
+                <p>Senior Developer : <b>Ye Thu Aung</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-warning border-2">
+              Sent Feedback
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-danger border-2"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./localization/index-localization.js"></script>
+  </body>
+</html>

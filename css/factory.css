@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.heading {
+  margin-left: 30px;
+}
+.box {
+  height: 120px;
+  width: 200px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.cal-btn {
+  width: 250px;
+  height: 50px;
+  padding-top: 10px;
+  margin: 10px 10px 0px 10px;
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    height: 100px;
+    width: 200px;
+    font-size: small;
+  }
+  .parent {
+    display: flex;
+    justify-content: center;
+  }
+  .head {
+    font-size: 15px;
+  }
+  .heading {
+    margin-left: 15px;
+  }
+  i {
+    font-size: 25px;
+  }
+}
+.data {
+  width: 400px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+@media screen and (max-width: 992px) {
+  .data {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .head {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .data {
+    box-sizing: border-box;
+    width: 250px;
+  }
+}
+.disabled-btn {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.select {
+  color: rgb(19, 225, 19);
+}
+custom-watt,
+.hour,
+.quantity,
+input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.suggest-watt {
+  border: 2px solid #333;
+  margin: 8px 0px;
+  background-color: #333;
+  border-radius: 4px;
+  text-align: center;
+  width: fit-content;
+  padding: 3px;
+}
